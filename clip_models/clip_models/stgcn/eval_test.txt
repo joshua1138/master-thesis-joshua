@@ -1,0 +1,28 @@
+Model       : stgcn
+Checkpoint  : ./clip_models\stgcn\best.pt
+Split       : test
+Window      : 64  Stride: 16
+
+Frame accuracy  : 66.57%
+Macro recall    : 55.84%
+Macro F1        : 52.83%
+mAP             : 57.15%
+Edit score      : 58.79
+F1@10           : 57.61%
+F1@25           : 50.10%
+F1@50           : 30.83%
+
+Per-class Average Precision:
+          idle  AP =  35.43%
+    in_between  AP =  46.13%
+          busy  AP =  89.91%
+
+              precision    recall  f1-score   support
+
+        idle       0.33      0.23      0.27     47645
+  in_between       0.40      0.69      0.51     57258
+        busy       0.86      0.76      0.81    215487
+
+    accuracy                           0.67    320390
+   macro avg       0.53      0.56      0.53    320390
+weighted avg       0.70      0.67      0.67    320390

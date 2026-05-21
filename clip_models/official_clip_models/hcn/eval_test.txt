@@ -1,0 +1,28 @@
+Model       : official_hcn
+Checkpoint  : ./official_clip_models\hcn\best.pt
+Split       : test
+Window      : 32  Stride: 16
+
+Frame accuracy  : 74.79%
+Macro recall    : 58.38%
+Macro F1        : 59.24%
+mAP             : 63.90%
+Edit score      : 56.25
+F1@10           : 57.04%
+F1@25           : 50.47%
+F1@50           : 35.43%
+
+Per-class Average Precision:
+                                      idle  AP =  45.19%
+                                in_between  AP =  56.10%
+                                      busy  AP =  90.41%
+
+              precision    recall  f1-score   support
+
+        idle       0.50      0.29      0.37     47645
+  in_between       0.53      0.57      0.55     57258
+        busy       0.84      0.90      0.87    215487
+
+    accuracy                           0.75    320390
+   macro avg       0.62      0.58      0.59    320390
+weighted avg       0.73      0.75      0.73    320390

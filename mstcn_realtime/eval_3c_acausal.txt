@@ -1,0 +1,31 @@
+======================================================================
+MS-TCN Evaluation  (3-class)
+======================================================================
+
+Frame-level metrics:
+  Frame accuracy:     75.41%
+  Macro recall:       61.67%
+  Macro F1:           62.09%
+  mAP:                64.46%
+
+Per-class metrics:
+  Class                     Prec    Recall        F1        AP   Support
+  ----------------------------------------------------------------------
+  idle                    46.30%    37.07%    41.18%   44.47%     47645
+  in_between              56.88%    59.95%    58.37%   57.40%     57258
+  busy                    85.46%    88.00%    86.71%   91.50%    215487
+
+Confusion matrix (rows=GT, cols=Pred):
+                        idle        in_between  busy      
+  idle                  17664       11758       18223     
+  in_between            8893        34325       14040     
+  busy                  11597       14264       189626    
+
+Segmentation metrics:
+  Edit score:         61.27
+  F1@0.10:            59.40%
+  F1@0.25:            54.00%
+  F1@0.50:            39.06%
+
+Test videos: 117
+Total frames: 320390

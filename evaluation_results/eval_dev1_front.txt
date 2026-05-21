@@ -1,0 +1,52 @@
+==================================================
+IKEA ASM — MS-TCN Evaluation Results
+==================================================
+
+Paper-comparable metrics (Table 2):
+  Frame accuracy (top-1):  62.38
+  Macro recall:            24.78
+  mAP:                     13.15
+
+Segmentation metrics:
+  Edit score:              63.92
+  F1@0.10:                 64.36
+  F1@0.25:                 59.19
+  F1@0.50:                 43.07
+
+Per-class recall:
+  NA                                             42.06%  (18647/44332 frames)
+  align leg screw with table thread              46.33%  (6239/13467 frames)
+  align side panel holes with front panel dowels  11.11%  (571/5141 frames)
+  attach drawer back panel                       35.28%  (3086/8747 frames)
+  attach drawer side panel                       41.24%  (2369/5745 frames)
+  attach shelf to table                          75.37%  (16709/22170 frames)
+  flip shelf                                      0.00%  (0/212 frames)
+  flip table                                     71.71%  (10334/14410 frames)
+  flip table top                                 47.20%  (1997/4231 frames)
+  insert drawer pin                              43.22%  (1709/3954 frames)
+  lay down back panel                             0.00%  (0/181 frames)
+  lay down bottom panel                           0.00%  (0/652 frames)
+  lay down front panel                            0.00%  (0/386 frames)
+  lay down leg                                    0.00%  (0/107 frames)
+  lay down shelf                                  0.00%  (0/130 frames)
+  lay down side panel                             0.00%  (0/15 frames)
+  lay down table top                              0.00%  (0/443 frames)
+  other                                           0.00%  (0/3313 frames)
+  pick up back panel                             24.62%  (400/1625 frames)
+  pick up bottom panel                           41.90%  (781/1864 frames)
+  pick up front panel                             0.00%  (0/779 frames)
+  pick up leg                                    48.46%  (7344/15156 frames)
+  pick up pin                                    18.22%  (392/2152 frames)
+  pick up shelf                                  55.96%  (2890/5164 frames)
+  pick up side panel                             27.89%  (985/3532 frames)
+  pick up table top                               0.00%  (0/628 frames)
+  position the drawer right side up              35.00%  (665/1900 frames)
+  push table                                      0.00%  (0/105 frames)
+  push table top                                  0.00%  (0/109 frames)
+  rotate table                                   17.49%  (608/3477 frames)
+  slide bottom of drawer                         34.89%  (2569/7364 frames)
+  spin leg                                       85.35%  (120423/141091 frames)
+  tighten leg                                    14.46%  (1129/7808 frames)
+
+Test videos: 117
+Total frames: 320390

@@ -1,0 +1,29 @@
+============================================================
+Causal MS-TCN — 3-Class Work-State Evaluation
+============================================================
+
+Frame-level metrics:
+  Frame accuracy:     71.95%
+  Macro F1:           58.71%
+
+Per-class metrics:
+  Class             Prec    Recall        F1   Support
+  --------------------------------------------------
+  idle            38.16%    38.25%    38.20%     47645
+  in_between      54.95%    52.82%    53.86%     57258
+  busy            83.67%    84.48%    84.07%    215487
+
+Confusion matrix (rows=GT, cols=Pred):
+                idle        in_between  busy      
+  idle          18223       11003       18419     
+  in_between    9891        30244       17123     
+  busy          19644       13797       182046    
+
+Segmentation metrics:
+  Edit score:         47.85
+  F1@0.10:            41.46%
+  F1@0.25:            35.38%
+  F1@0.50:            24.01%
+
+Test videos: 117
+Total frames: 320390
